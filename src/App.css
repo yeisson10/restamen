@@ -1,0 +1,1074 @@
+@font-face {
+  font-family: "Norwester";
+  src: url(./fonts/norwester/norwester.otf);
+}
+@font-face {
+  font-family: "Bitter-Regular";
+  src: url(./fonts/bitter/Bitter-Regular.otf);
+}
+@font-face {
+  font-family: "Bitter-Bold";
+  src: url(./fonts/bitter/Bitter-Bold.otf);
+}
+@font-face {
+  font-family: "Bungee-Regular";
+  src: url(./fonts/Bungee/Bungee-Regular.otf);
+}
+@font-face {
+  font-family: "Bungee-Rotated";
+  src: url(./fonts/Bungee/BungeeLayersRotated-Regular.otf);
+}
+@font-face {
+  font-family: "Oswald-Extra-Light";
+  src: url(./fonts/oswald/Oswald-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Oswald-Extra-Light-Italic";
+  src: url(./fonts/oswald/Oswald-Extra-LightItalic.ttf);
+}
+@font-face {
+  font-family: "Oswald-Regular-Italic";
+  src: url(./fonts/oswald/Oswald-RegularItalic.ttf);
+}
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url(./fonts/oswald/Oswald-Regular.ttf);
+}
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url(./fonts/oswald/Oswald-Bold.ttf);
+}
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url(./fonts/oswald/Oswald-Medium.ttf);
+}
+@font-face {
+  font-family: "Norwester";
+  src: url(./fonts/norwester/norwester.otf);
+}
+@font-face {
+  font-family: "Oswald-Demi-Bold-Italic";
+  src: url(./fonts/oswald/Oswald-Demi-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "Oswald-Light";
+  src: url(./fonts/oswald/Oswald-Light.ttf);
+}
+@font-face {
+  font-family: "Linowrite";
+  src: url(./fonts/Linowrite/linowrite.ttf);
+}
+/* @font-face {
+  font-family: "Bungee-Regular";
+  src: url(./fonts/Bungee/Bungee-Regular.otf);
+} */
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400;1,700&family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+:root {
+  /* --font-Bungee-Regular: "Bungee-Regular"; */
+  --font-Linowrite: "Linowrite";
+  --font-Norwester: "Norwester";
+  --font-Bitter-Regular: "Bitter-Regular";
+  --font-Bitter-Bold: "Bitter-Bold";
+  --font-Bungee-Regular: "Bungee-Regular";
+  --font-Bungee-Rotated: "Bungee-Rotated";
+  --font-Oswald-Extra-Light: "Oswald-Extra-Light";
+  --font-Oswald-Extra-Light-Italic: "Oswald-Extra-Light-Italic";
+  --font-Oswald-Light: "Oswald-Light";
+  --font-Oswald-Regular: "Oswald-Regular";
+  --font-Oswald-Bold: "Oswald-Bold";
+  --font-Oswald-Regular-Italic: "Oswald-Regular-Italic";
+  --font-Oswald-Medium: "Oswald-Medium";
+  --font-Oswald-Demi-Bold-Italic: "Oswald-Demi-Bold-Italic";
+
+  --color-main: #414142;
+  --color-orange: #fbb040;
+  --color-salmon: #f3716d;
+  --color-green: #a0a98c;
+  --size9: 9.969rem;
+  --size8: 7.478rem;
+  --size7: 5.61rem;
+  --size6: 4.209rem;
+  --size5: 3.157rem;
+  --size4: 2.369rem;
+  --size3: 1.777rem;
+  --size2: 1.333rem;
+  --size1: 1rem;
+  --size-1: 0.75rem;
+  --size-2: 0.563rem;
+  --size-3: 0.422rem;
+  --size-4: 0.317rem;
+}
+html {
+  /* font-size: 62.5%; */
+  font-size: 16px;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-Bitter-Regular);
+  color: var(--color-main);
+}
+
+.menu {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.305),
+      rgba(255, 255, 255, 0.305)
+    ),
+    url(./IMG/Texture.png);
+  /* display: flex;
+  justify-content: center; */
+  padding: 2.369rem 7.478rem;
+}
+.menu-wrapper {
+  /* width: 100%; */
+  /* max-width: 1200px; */
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* grid-template-rows: min-content min-content min-content min-content; */
+  grid-auto-rows: min-content;
+  column-gap: var(--size-1);
+  row-gap: var(--size-3);
+}
+
+/* ---------------------- MENU-HEADER -------------------------- */
+/* ------------------------------------------------------------- */
+.menu-header {
+  width: 100%;
+  border-bottom: 6px solid var(--color-main);
+  display: flex;
+  justify-content: center;
+  gap: 1.333em;
+  position: relative;
+  padding: 1.777em;
+  /* margin-bottom: 3px; */
+}
+
+.header-col-left {
+  /* width: 50%; */
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+.header-headings-holder {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-headings-holder h1 {
+  font-family: var(--font-Bungee-Regular);
+  font-size: 7.478rem;
+  color: var(--color-main);
+  line-height: 1;
+  align-items: center;
+  justify-self: center;
+}
+
+.header-headings-holder h3 {
+  font-family: var(--font-Bitter-Bold);
+  font-size: 1.333rem;
+  color: var(--color-main);
+  text-transform: uppercase;
+  align-items: center;
+  justify-self: center;
+  letter-spacing: 0.5px;
+}
+.header-col-right {
+  flex: 1;
+  /* width: 50%; */
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.menu-header p {
+  font-family: var(--font-Bitter);
+}
+
+/* ---------------------- MENU-BODY -------------------------- */
+/* ----------------------------------------------------------- */
+.menu-body {
+  border-top: 10px solid var(--color-main);
+}
+/* ---------------------- SIDE-PANEL -------------------------- */
+/* ----------------------------------------------------------- */
+.side-panel {
+  background-color: var(--color-orange);
+  grid-column: 1/4;
+  grid-row: 1/4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------------- BURGER-MENU -------------------------- */
+/* ------------------------------------------------------------- */
+.burger-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem 1.333rem;
+  margin-bottom: 0.75rem;
+  gap: 1.3rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.burger-menu h1 {
+  /* background-color: var(--color-main); */
+  font-family: var(--font-Oswald-Extra-Light);
+  font-size: 3.157rem;
+  position: relative;
+  color: var(--color-orange);
+  background-color: var(--color-main);
+  /* display: inline-block; */
+  border-radius: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.burger-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.333rem;
+}
+
+.burger-offer-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content;
+  align-items: baseline;
+  row-gap: 1rem;
+}
+
+.burger-offer-card .headings-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.burger-offer-card h3:nth-child(1) {
+  grid-column: 1/2;
+  font-family: var(--font-Oswald-Extra-Light-Italic);
+  font-size: 1.333rem;
+  text-transform: uppercase;
+}
+.burger-offer-card h3:nth-child(2) {
+  grid-column: 2/3;
+  justify-self: end;
+  font-family: var(--font-Oswald-Extra-Light-Italic);
+  font-size: 1.333rem;
+}
+.burger-offer-card p {
+  grid-column: 1/3;
+  grid-row: 2;
+  font-family: var(--font-Bitter-Regular);
+}
+
+/* ---------------------- HOTDOG-MENU -------------------------- */
+/* ------------------------------------------------------------- */
+
+.menu-body {
+  padding-top: 1.333rem;
+}
+
+.hotdog-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem 1.333rem;
+  gap: 1.3rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.hotdog-menu h1 {
+  /* background-color: var(--color-main); */
+  font-family: var(--font-Norwester);
+  font-size: 3.157rem;
+  position: relative;
+  color: var(--color-orange);
+  background-color: var(--color-main);
+  /* display: inline-block; */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotdog-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.333rem;
+}
+
+.hotdog-offer-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
+  align-items: baseline;
+  row-gap: 1rem;
+}
+.hotdog-offer-card h3:nth-child(1) {
+  grid-column: 1/3;
+  font-family: var(--font-Oswald-Demi-Bold-Italic);
+  font-size: 1.333rem;
+  text-transform: uppercase;
+}
+
+.hotdog-offer-card p {
+  grid-column: 1/3;
+  grid-row: 2;
+  font-family: var(--font-Bitter-Regular);
+}
+
+.hotdog-card-footer {
+  grid-column: 1/3;
+  display: flex;
+  gap: 1.333rem;
+  justify-content: space-between;
+}
+.hotdog-offer-card h3:nth-child(2) {
+  font-family: var(--font-Oswald-Light);
+  font-size: 1.333rem;
+  text-transform: uppercase;
+}
+.hotdog-card-footer-line {
+  flex: 1;
+  height: 6px;
+  background-color: var(--color-main);
+  align-self: center;
+}
+
+/* ---------------------- SANDWICH-MENU ------------------------ */
+/* ------------------------------------------------------------- */
+.sandwich-menu {
+  background-color: var(--color-salmon);
+  grid-column: 4/7;
+  grid-row: 1/2;
+  position: relative;
+  display: flex;
+}
+
+.sandwich-menu {
+  display: flex;
+  padding: 1.3rem 0.75rem;
+  /* column-gap: 0.75rem; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.sandwich-menu h1 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-family: var(--font-Norwester);
+  font-size: 2rem;
+  border-radius: 48px;
+  position: relative;
+  color: var(--color-salmon);
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 0.75rem;
+}
+.sandwich-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.333rem;
+  flex: 1;
+}
+
+.sandwich-offer-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content;
+  align-items: baseline;
+  row-gap: 0.563rem;
+}
+
+.sandwich-offer-card .headings-holder-underlined {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 0.563rem;
+  border-bottom: 4px solid white;
+}
+.sandwich-offer-card .headings-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sandwich-offer-card h3:nth-child(1) {
+  font-family: var(--font-Oswald-Regular);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: white;
+}
+.sandwich-offer-card h3:nth-child(2) {
+  justify-self: end;
+  font-family: var(--font-Oswald-Extra-Light);
+  font-size: 1.1rem;
+  color: white;
+}
+.sandwich-offer-card p {
+  grid-column: 1/3;
+  grid-row: 2;
+  font-family: var(--font-Bitter-Regular);
+  color: white;
+  font-size: 0.9rem;
+}
+/* ---------------------- PIZZA-MENU --------------------------- */
+/* ------------------------------------------------------------- */
+
+.pizza-menu {
+  background-color: var(--color-orange);
+  grid-column: 7/10;
+  grid-row: 1/2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pizza-menu-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem 1.333rem;
+  margin-bottom: 0.75rem;
+  gap: 1.3rem;
+  justify-content: space-between;
+}
+.pizza-menu h1 {
+  font-family: var(--font-Linowrite);
+  font-size: 3.157rem;
+  position: relative;
+  color: var(--color-orange);
+  padding: 0.333rem 0rem;
+  background-color: var(--color-main);
+  border-radius: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pizza-menu-wrap ul {
+  display: block;
+  list-style: none;
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.369rem;
+  column-gap: 1rem;
+}
+.pizza-offer-card {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.pizza-offer-card h3:nth-child(1) {
+  font-family: var(--font-Oswald-Light);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  order: 1;
+  background-color: var(--color-main);
+  color: #fbb040;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0rem;
+}
+.pizza-offer-card h3:nth-child(2) {
+  font-family: var(--font-Oswald-Bold);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  order: 3;
+}
+.pizza-offer-card p {
+  font-family: var(--font-Bitter-Regular);
+  font-size: 0.9rem;
+  order: 2;
+  margin-bottom: 0.422rem;
+  line-height: 1.5;
+}
+
+/* ---------------------- HAPPY-HOUR --------------------------- */
+/* ------------------------------------------------------------- */
+.happyhour {
+  background-color: var(--color-salmon);
+  color: white;
+  grid-column: 10/13;
+  grid-row: 1/2;
+}
+.happyhour-container {
+  padding: 1.3rem 1.333rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.happyhour-container-col1 {
+  flex: 1;
+}
+.happyhour-container-col2 {
+  display: block;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.discount-holder {
+  height: 100%;
+  margin: 0 auto;
+  flex: 1;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: min-content min-content;
+  grid-auto-rows: min-content;
+}
+
+.discount-holder > h1:nth-of-type(1) {
+  font-family: var(--font-Linowrite);
+  font-size: var(--size8);
+  grid-column: 1;
+  grid-row: 1/2;
+  /* margin-bottom: var(--size21); */
+  /* line-height: 1; */
+}
+.percentage-holder {
+  grid-column: 2;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.percentage-holder span:nth-of-type(1) {
+  font-family: var(--font-Linowrite);
+  font-size: var(--size6);
+  grid-row: 1/2;
+}
+.percentage-holder span:nth-of-type(2) {
+  font-family: var(--font-Bungee-Regular);
+  font-size: var(--size3);
+  grid-row: 2/3;
+  line-height: 0;
+}
+.discount-holder > h1:nth-of-type(2) {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  text-transform: uppercase;
+  font-family: var(--font-Linowrite);
+  font-size: var(--size5);
+  margin-bottom: var(--size-2);
+}
+.discount-holder > h1:nth-of-type(3) {
+  grid-row: 3/4;
+  grid-column: 1/-1;
+  text-transform: uppercase;
+  font-family: var(--font-Bungee-Regular);
+  font-size: var(--size6);
+  line-height: 1;
+  margin-bottom: var(--size-2);
+}
+
+.happyhour-container-col2 p {
+  font-family: var(--font-Bitter-Regular);
+  font-size: 1rem;
+  text-align: center;
+  flex-grow: 0;
+}
+/* ---------------------- BREAKFAST-MENU ----------------------- */
+/* ------------------------------------------------------------- */
+.breakfast-menu {
+  padding: var(--size1);
+  grid-column: 4/-1;
+  grid-row: 2/3;
+  border: var(--size-2) solid var(--color-green);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* grid-template-rows: min-content min-content min-content min-content; */
+  grid-auto-rows: min-content;
+  row-gap: var(--size1);
+  column-gap: var(--size3);
+}
+.breakfast-menu-header {
+  grid-column: 1/13;
+  grid-row: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.breakfast-menu-header > h1 {
+  flex: 6;
+  /* display: block; */
+
+  font-size: var(--size5);
+  font-family: var(--font-Bungee-Regular);
+  text-transform: uppercase;
+  align-self: center;
+  line-height: 1;
+}
+.breakfast-menu-header > p {
+  flex: 7;
+  /* display: block; */
+  align-self: center;
+}
+.breakfast-menu-window {
+  position: relative;
+  border: var(--size-2) solid var(--color-green);
+  background-color: white;
+  height: var(--size9);
+  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.771);
+}
+
+/* .breakfast-menu-image-holder::after {
+  content: "";
+  padding: 0;
+  margin: 0;
+  box-sizing: initial;
+  position: absolute;
+  top: -0.35rem;
+  left: -0.75rem;
+  height: 100%;
+  width: 100%;
+  border: var(--size-1) solid;
+  border-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0)) 1 10%;
+  transform: rotate(180deg);
+} */
+.breakfast-menu-window1 {
+  grid-column: 1/5;
+  grid-row: 2;
+}
+.breakfast-menu-window2 {
+  grid-row: 2;
+  grid-column: 5/9;
+}
+.breakfast-menu-window3 {
+  grid-row: 2;
+  grid-column: 9/13;
+}
+
+.breakfast-menu-card {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-1);
+}
+.breakfast-menu-card {
+  display: flex;
+  flex-direction: column;
+}
+.title-holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.breakfast-menu-card .title-holder h3:nth-child(1) {
+  text-transform: uppercase;
+  font-family: var(--font-Oswald-Demi-Bold-Italic);
+  font-size: var(--size2);
+}
+.breakfast-menu-card .title-holder h3:nth-child(2) {
+  text-transform: uppercase;
+  font-family: var(--font-Oswald-Regular-Italic);
+  font-size: var(--size2);
+}
+
+/* ---------------------- BEVERAGES-MENU ----------------------- */
+/* ------------------------------------------------------------- */
+
+.beverages-menu {
+  grid-column: 4/10;
+  grid-row: 3/4;
+  border: var(--size-2) solid var(--color-green);
+  display: flex;
+}
+.beverages-title {
+  background-color: #a0a98c;
+  order: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beverages-title h1 {
+  writing-mode: vertical-rl;
+  font-family: var(--font-Bungee-Regular);
+  text-transform: uppercase;
+  font-size: var(--size5);
+  line-height: 1.6;
+}
+.beverage-offers {
+  flex: 1;
+  padding: var(--size1);
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--size1);
+}
+.beverage-offers-header {
+  /* flex: 0; */
+  display: flex;
+  flex-direction: column;
+}
+
+.beverage-offers-header-col1 {
+  display: grid;
+  row-gap: var(--size1);
+  column-gap: var(--size3);
+  grid-template-columns: max-content 1fr max-content;
+}
+.beverage-offers-header-col1 h3:nth-of-type(1) {
+  text-transform: uppercase;
+  font-family: var(--font-Oswald-Demi-Bold-Italic);
+  align-self: center;
+}
+.beverage-offers-header-col1 h3:nth-of-type(2) {
+  text-transform: uppercase;
+  font-family: var(--font-Oswald-Regular-Italic);
+  align-self: center;
+}
+
+.beverage-offers-header-col1 span {
+  background-color: var(--color-main);
+  height: var(--size-4);
+  align-self: center;
+}
+.beverage-offers-header-col1 p {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+.beverage-offers-header-col2 {
+  display: grid;
+  row-gap: var(--size1);
+  column-gap: var(--size3);
+  grid-template-columns: max-content 1fr max-content;
+}
+.beverage-offers-header-col2 h3:nth-of-type(1) {
+  text-transform: uppercase;
+  font-family: var(--font-Oswald-Demi-Bold-Italic);
+  align-self: center;
+}
+.beverage-offers-header-col2 h3:nth-of-type(2) {
+  text-transform: uppercase;
+  font-family: var(--font-Oswald-Regular-Italic);
+  align-self: center;
+}
+
+.beverage-offers-header-col2 span {
+  background-color: var(--color-main);
+  height: var(--size-4);
+  align-self: center;
+}
+.beverage-offers-header-col2 p {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+.beverage-offers-body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: var(--size-2);
+  column-gap: var(--size-2);
+}
+.window-menu {
+  position: relative;
+  border: var(--size-2) solid var(--color-green);
+  background-color: white;
+  padding: 0rem var(--size2);
+
+  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.771);
+}
+.beverage-offers-body-window-big {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.beverage-offers-body-window-small:nth-of-type(1) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.beverage-offers-body-window-small:nth-of-type(2) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.window-offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.window-offer h3:nth-of-type(1) {
+  font-family: var(--font-Oswald-Light);
+  font-size: var(--size2);
+  text-transform: uppercase;
+}
+.window-offer h3:nth-of-type(2) {
+  font-family: var(--font-Oswald-Light);
+  font-size: var(--size2);
+  text-transform: uppercase;
+}
+
+/* ---------------------- SPECIALS-SQUARE ---------------------- */
+/* ------------------------------------------------------------- */
+.specials-menu {
+  grid-column: 10/13;
+  /* grid-row: 3/4; */
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+}
+.specials-menu-title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-main);
+}
+.specials-menu-title h1 {
+  color: white;
+  font-family: var(--font-Linowrite);
+  text-transform: uppercase;
+  font-size: var(--size4);
+  text-align: center;
+  padding: var(--size-2);
+}
+.specials-menu-offers {
+  flex: 2;
+  background-color: var(--color-orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: var(--size3);
+  gap: var(--size-4);
+}
+.specials-menu-offers-col1,
+.specials-menu-offers-col2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+}
+.specials-menu-offers h3:nth-of-type(1) {
+  font-family: var(--font-Oswald-Medium);
+  font-size: var(--size2);
+}
+
+.specials-menu-offers h3:nth-of-type(2) {
+  font-family: var(--font-Oswald-Light);
+  font-size: var(--size2);
+}
+/* ---------------------- MENU-FOOTER -------------------------- */
+/* ------------------------------------------------------------- */
+.menu-footer {
+  background-color: var(--color-salmon);
+  /* width: 100%; */
+  display: flex;
+  /* gap: 1.333em; */
+  position: relative;
+  padding: 1.777em;
+  gap: 2.369rem;
+}
+.menu-footer-col-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.menu-footer-col-right {
+  flex: 4;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.menu-footer h1 {
+  color: white;
+  font-family: var(--font-Bungee-Regular);
+  font-size: 2.1rem;
+  line-height: 1.6;
+}
+.menu-footer p {
+  color: white;
+  font-family: var(--font-Bitter-Regular);
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+  .menu {
+    padding: 2.369rem 0rem;
+  }
+}
+@media (max-width: 1300px) {
+  .menu {
+    padding: 2.369rem var(--size-2);
+  }
+}
+@media (max-width: 1050px) {
+  /* .grid {
+    grid-template-columns: 1fr;
+  } */
+
+  .menu-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-panel {
+    grid-column: 1/13;
+    grid-row: 1/2;
+  }
+  .menu-wrapper {
+    margin: 2.369rem var(--size4);
+  }
+  .sandwich-menu {
+    grid-column: 1 / 5;
+    grid-row: 2/3;
+  }
+  .pizza-menu {
+    grid-column: 5 / 9;
+    grid-row: 2/3;
+  }
+  .happyhour {
+    grid-column: 9 / 13;
+    grid-row: 2/3;
+  }
+  .breakfast-menu {
+    grid-column: 1/13;
+    grid-row: 3;
+  }
+  .beverages-menu {
+    grid-column: 1/13;
+    grid-row: 4;
+  }
+  .small1 {
+    display: none;
+  }
+  .small2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .specials-menu {
+    grid-column: 1/13;
+  }
+}
+
+@media (max-width: 800px) {
+  .happyhour {
+    grid-column: 1 / 13;
+    grid-row: 2/3;
+  }
+  .sandwich-menu {
+    grid-column: 1 / 7;
+    grid-row: 3/4;
+  }
+  .pizza-menu {
+    grid-column: 7 / 13;
+    grid-row: 3/4;
+  }
+
+  .breakfast-menu {
+    grid-column: 1/13;
+    grid-row: 4;
+  }
+  .breakfast-menu-window {
+    display: none;
+  }
+  .breakfast-menu-header > h1 {
+    flex: unset;
+  }
+  .breakfast-menu-header > p {
+    flex: unset;
+  }
+  .beverages-menu {
+    grid-column: 1/13;
+    grid-row: 5;
+  }
+  .beverage-offers-body-window-big {
+    grid-column: 1/-1;
+  }
+  .beverage-offers-body-window-small {
+    display: none;
+  }
+  .specials-menu {
+    grid-column: 1/13;
+  }
+}
+@media (max-width: 600px) {
+  .sandwich-menu {
+    grid-column: 1 / 13;
+    grid-row: 4/5;
+  }
+  .pizza-menu {
+    grid-column: 1 / 13;
+    grid-row: 5/6;
+  }
+
+  .breakfast-menu {
+    grid-column: 1/13;
+    grid-row: 6/7;
+  }
+
+  .beverages-menu {
+    grid-column: 1/13;
+    grid-row: 7;
+  }
+
+  .specials-menu {
+    grid-column: 1/13;
+  }
+  .menu-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 570px) {
+  .breakfast-menu-card {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-col-right {
+    display: none;
+  }
+  .breakfast-menu-card {
+    grid-column: 1/-1;
+  }
+  .sandwich-menu {
+    flex-direction: column;
+    gap: var(--size1);
+  }
+  .sandwich-menu > h1 {
+    writing-mode: horizontal-tb;
+    transform: translate(0);
+    font-size: var(--size5);
+  }
+  .breakfast-menu {
+    column-gap: 0;
+  }
+  .breakfast-menu-header {
+    justify-content: center;
+  }
+
+  .breakfast-menu-header > p {
+    text-align: center;
+  }
+  .beverages-menu {
+    flex-direction: column;
+  }
+  .beverages-title {
+    order: -1;
+  }
+  .beverages-title > h1 {
+    writing-mode: horizontal-tb;
+  }
+}
+@media (max-width: 400px) {
+  .breakfast-menu-header > h1 {
+    font-size: var(--size4);
+  }
+}
