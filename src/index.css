@@ -1,0 +1,8 @@
+
+@media (min-width: 1050px) and (max-width: 2012px){
+    .burger-menu h1{
+      font-size: calc(24px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+
+  

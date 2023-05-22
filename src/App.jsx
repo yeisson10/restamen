@@ -1,86 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-
-function Logo(props) {
-    return (
-    <div className="menu-header">
-    <div className="header-col-left">
-      <div className="header-headings-holder">
-        <h1>{props.logotipo}</h1>
-        <h3>{props.slogan}</h3>
-      </div>
-    </div>
-    <div className="header-col-right">
-      <p>{props.aviso}</p>
-    </div>
-  </div>
-  )
-}
-
-function Columna1p1(props){
-return(
-  <div className="burger-menu">
-  <h1>{props.title1p1}</h1>
-  <ul>
-    <li className="burger-menu-item">
-      <div className="burger-offer-1 burger-offer-card">
-        <div className="headings-holder">
-          <h3>{props.item1p1}</h3>
-          <h3>{props.price1p1}</h3>
-        </div>
-        <p>{props.description1p1}</p>
-      </div>
-    </li>
-    <li className="burger-menu-item">
-      <div className="burger-offer-2 burger-offer-card">
-        <div className="headings-holder">
-          <h3>Menu Burger</h3>
-          <h3>5.00 </h3>
-        </div>
-        <p>
-          Donec luctus malesuada imperdiet. Nunc faucibus rhoncus
-          felis, vitae tincidunt turpis sollicitudin sit amet.
-        </p>
-      </div>
-    </li>
-    <li className="burger-menu-item">
-      <div className="burger-offer-3 burger-offer-card">
-        <div className="headings-holder">
-          <h3>Menu Burger</h3>
-          <h3>5.00 </h3>
-        </div>
-        <p>
-          Donec luctus malesuada imperdiet. Nunc faucibus rhoncus
-          felis, vitae tincidunt turpis sollicitudin sit amet.
-        </p>
-      </div>
-    </li>
-    <li className="burger-menu-item">
-      <div className="burger-offer-4 burger-offer-card">
-        <div className="headings-holder">
-          <h3>Menu Burger</h3>
-          <h3>5.00 </h3>
-        </div>
-        <p>
-          Donec luctus malesuada imperdiet. Nunc faucibus rhoncus
-          felis, vitae tincidunt turpis sollicitudin sit amet.
-        </p>
-      </div>
-    </li>
-  </ul>
-</div>
-)
-}
+import { Logos } from './Logos'
+import Menu from './components/Menu'
 
 function App() {
   const [count, setCount] = useState(0)
   return (
 <div className="menu">
       <div className="menu-wrapper">
-       <Logo logotipo="Luisk" slogan="Comidas Rapidas En Magangue" aviso="Hoy promocion de perros calientes a $10.000"  />
+       <Logos logotipo="Andres" slogan="Comidas Rapidas En Cartagena" aviso="Hoy promocion de perros calientes a $10.000"  />
         <div className="menu-body grid">
           <div className="side-panel">
-          <Columna1p1 title1p1="Hamburguesas" item1p1="Arena y Vidrios" price1p1="$ 15.000" description1p1="Deliciosa Hamburguesa con arena y vidrios, con chispa de agua de dulce."/>
+          <Menu nombeCateg="Hamburguesas" nombreclasecs="burger" />
+          <Menu nombeCateg="Hot dogs" nombreclasecs="hotdog" />
             <div className="hotdog-menu">
               <h1>hotdog</h1>
               <ul>

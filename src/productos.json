@@ -1,0 +1,110 @@
+[
+  {
+    "restaurantes": [
+      {
+        "id_restaurante": 1,
+        "nit_restaurante": 8701459515,
+        "password_restaurante": "25d55ad283aa400af464c76d713c07ad",
+        "nombre_contacto__restaurante": "Pedro Navaja",
+        "telefono_contacto_restaurante": 3007622589,
+        "email_contanto_restaurante": "elprimero@gmmail.com",
+        "nombre_restautante": "Andres",
+        "slogan": "Comidas Repida en los Caracoles",
+        "aviso": "Promocion Hoy de Perros Calientes",
+        "fecha_aviso_restaurante": "21/Mayo/2023",
+        "fecha_ultimo_ingreso_restaurante": "09:10pm 21/Mayo/2023",
+        "login": false
+      },
+      {
+        "id_restaurante": 2,
+        "nit_restaurante": 8701457666,
+        "password_restaurante": "25d55ad283aa400af464c76d713c07ad",
+        "nombre_contacto__restaurante": "Luisk Rangel",
+        "telefono_contacto_restaurante": 3047622589,
+        "email_contanto_restaurante": "elsegundo@gmmail.com",
+        "nombre_restautante": "LK Food",
+        "slogan": "Rapido Como EL Gallo",
+        "aviso": "No fiamos",
+        "fecha_aviso_restaurante": "01/Mayo/2023",
+        "fecha_ultimo_ingreso_restaurante": "07:10 pm 12/Mayo/2023",
+        "login": false
+      },
+      {
+        "id_restaurante": 3,
+        "nit_restaurante": 9101475666,
+        "password_restaurante": "25d55ad283aa400af464c76d713c07ad",
+        "nombre_contacto__restaurante": "kally",
+        "telefono_contacto_restaurante": 3147852589,
+        "email_contanto_restaurante": "eltercero@gmmail.com",
+        "nombre_restautante": "Como y Pague",
+        "slogan": "no se acepta limpios",
+        "aviso": "que es la que hay?",
+        "fecha_aviso_restaurante": "03/Mayo/2023",
+        "fecha_ultimo_ingreso_restaurante": "07:10 pm 14/Mayo/2023",
+        "login": false
+      }
+    ],
+    "categorias": [
+      {
+        "id_categoria": 2,
+        "nombre_categoria": "hamburguesas",
+        "nombre_producto_categoria": "hamburguesa de pollo",
+        "precio_produnto_categoria": 15000,
+        "descripcion_producto_categoria": "Deliciosa hamburguesa de pollo, con salsa de tomate, pina y hierbas finas.",
+        "fecha_agregado_categoria": "15/Mayo/2023",
+        "fecha_ultimamodiciacion_categoria": "17/Mayo/2023",
+        "descuento_producto_categoria": 0
+      },
+      {
+        "id_categoria": 2,
+        "nombre_categoria": "hamburguesas",
+        "nombre_producto_categoria": "hamburguesa de Carne",
+        "precio_produnto_categoria": 15000,
+        "descripcion_producto_categoria": "Deliciosa hamburguesa de carne de res, con salsa de tomate, pina y hierbas finas.",
+        "fecha_agregado_categoria": "15/Mayo/2023",
+        "fecha_ultimamodiciacion_categoria": "15/Mayo/2023",
+        "descuento_producto_categoria": 0
+      },
+      {
+        "id_categoria": 3,
+        "nombre_categoria": "hamburguesas",
+        "nombre_producto_categoria": "hamburguesa de cerdo",
+        "precio_produnto_categoria": 15000,
+        "descripcion_producto_categoria": "Deliciosa hamburguesa de cerdo, con salsa de tomate, pina y hierbas finas.",
+        "fecha_agregado_categoria": "15/Mayo/2023",
+        "fecha_ultimamodiciacion_categoria": "17/Mayo/2023",
+        "descuento_producto_categoria": 0
+      },
+      {
+        "id_categoria": 4,
+        "nombre_categoria": "hamburguesas",
+        "nombre_producto_categoria": "hamburguesa de palo",
+        "precio_produnto_categoria": 18000,
+        "descripcion_producto_categoria": "Deliciosa hamburguesa de palo de madera, con salsa de tomate, pina y hierbas finas.",
+        "fecha_agregado_categoria": "15/Mayo/2023",
+        "fecha_ultimamodiciacion_categoria": "15/Mayo/2023",
+        "descuento_producto_categoria": 3000
+      },
+      {
+        "id_categoria": 5,
+        "nombre_categoria": "hot-dog",
+        "nombre_producto_categoria": "hot dog de cerdo",
+        "precio_produnto_categoria": 5000,
+        "descripcion_producto_categoria": "Deliciosa hot dog de cerdo, con salsa de tomate, pina y hierbas finas.",
+        "fecha_agregado_categoria": "15/Mayo/2023",
+        "fecha_ultimamodiciacion_categoria": "17/Mayo/2023",
+        "descuento_producto_categoria": 0
+      },
+      {
+        "id_categoria": 6,
+        "nombre_categoria": "hot-dog",
+        "nombre_producto_categoria": "hot-dog de palo",
+        "precio_produnto_categoria": 18000,
+        "descripcion_producto_categoria": "Deliciosa hot dog de palo de madera, con salsa de tomate, pina y hierbas finas.",
+        "fecha_agregado_categoria": "15/Mayo/2023",
+        "fecha_ultimamodiciacion_categoria": "15/Mayo/2023",
+        "descuento_producto_categoria": 3000
+      }
+    ]
+  }
+]
